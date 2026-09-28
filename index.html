@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Website — Mulungushi University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <p class="eyebrow">Mulungushi University · School of Engineering and Technology</p>
+    <h1>[SIMEON SAKALA]</h1>
+    <p class="tagline">ICT student — Computer Science, Mathematics &amp; Physics</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#learning-plan">My Learning Plan</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs (external)</a>
+  </nav>
+
+  <main>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        I am a first-year student at Mulungushi University, studying a programme that combines
+        computer science with mathematics, physics, chemistry and communication skills. In my
+        Java and object-oriented programming course I have worked with control flow, classes and
+        small lab projects such as a student attendance system, while my data structures course
+        has covered sorting, stacks, queues and hashing. Alongside programming, I study engineering
+        mathematics, introductory physics and chemistry, which give me a strong problem-solving
+        foundation. I am currently building my first websites in ICT251 Web Technologies and I am
+        excited to keep improving my HTML, CSS and JavaScript skills over the rest of the course.
+      </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Reading</li>
+        <li>Football</li>
+        <li>Coding</li>
+      </ul>
+
+      <h3>How I will improve my web skills</h3>
+      <ol>
+        <li>Practise building one small page from scratch every week, without copying a template.</li>
+        <li>Complete a structured course on JavaScript and DOM manipulation.</li>
+        <li>Recreate a design I admire to learn layout and CSS techniques by imitation.</li>
+      </ol>
+    </section>
+
+    <section id="learning-plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <table>
+        <caption>Weekly web learning plan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Practice task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Semantic HTML</td>
+            <td>Rebuild this page's structure from a blank file, from memory</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS layout (Flexbox)</td>
+            <td>Turn the photo gallery into a responsive Flexbox row</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Forms &amp; validation</td>
+            <td>Add custom validation messages to the contact form</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <p>A few photos from campus life and my study routine.</p>
+      <div class="gallery">
+        <figure>
+          <img src="./images/ds.png" alt="temp sample image">
+          <figcaption>Late-night revision session.</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/yt.png" alt="The Mulungushi University campus entrance">
+          <figcaption>Entrance to campus on a clear morning.</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/wd.png" alt="Me playing football with friends on campus">
+          <figcaption>Weekend football with coursemates.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <h3>Introduction video</h3>
+      <video controls src="./videos/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="media-transcript">
+        <strong>Transcript:</strong> "Hi, my name is simeon sakala. I'm studying Computer Science at
+        Mulungushi University,currently am in my second and I hope to learn different web skills this year, by  building responsive
+        layouts with Flexbox and Grid in hopes of my skill to grow exponecially."
+      </p>
+
+      <h3>Audio clip</h3>
+      <audio controls>
+         <source src="audio/audio.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+      <p class="media-transcript">
+        A short recording about why I chose to study web technologies and what I enjoy most about
+        programming so far.
+      </p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p class="form-note">This form is a browser demonstration only — it does not send any data anywhere.</p>
+      <form action="#">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="general">General enquiry</option>
+            <option value="study">Study collaboration</option>
+            <option value="feedback">Feedback on this site</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 [SIMEON SAKALA] · ICT251 Web Technologies · Mulungushi University</p>
+  </footer>
+
+</body>
+</html>
